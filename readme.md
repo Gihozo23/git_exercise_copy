@@ -344,3 +344,70 @@ Total 5 (delta 3), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
 To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
    e9c3c4a..087631f  ft/team-page -> ft/team-page
+
+# exercise 2
+
+PS C:\Users\user\Documents\git_exercises> git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+PS C:\Users\user\Documents\git_exercises> git checkout -b ft/home-page-redesign
+PS C:\Users\user\Documents\git_exercises> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\user\Documents\git_exercises> git add readme.md
+PS C:\Users\user\Documents\git_exercises> git commit -m "added the Bundle 3 commands to this file"
+[main 785959a] added the Bundle 3 commands to this file
+PS C:\Users\user\Documents\git_exercises> git push origin main
+To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changhint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\user\Documents\git_exercises> git fetch
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), 3.75 KiB | 69.00 KiB/s, done.
+From https://github.com/Gihozo23/Gym-Git-Exercise-Solution
+   3b251d3..2ccb5ef  main       -> origin/main
+PS C:\Users\user\Documents\git_exercises> git push origin main
+To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Gihozo23/Gym-Git
+hint: Updates were rejected because the tip of your current branch is b
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for detai
+PS C:\Users\user\Documents\git_exercises> git pull origin main
+From https://github.com/Gihozo23/Gym-Git-Exercise-Solution
+ * branch            main       -> FETCH_HEAD
+Auto-merging readme.md
+CONFLICT (content): Merge conflict in readme.md
+Automatic merge failed; fix conflicts and then commit the result.      
+le 3 commands to this file"
+PS C:\Users\user\Documents\git_exercises> git push origin main
+To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
+PS C:\Users\user\Documents\git_exercises> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'     B/s, done.
+PS C:\Users\user\Documents\git_exercises> git rsed 0ebase main                                      with 2 local objects.  
+Successfully rebased and updated refs/heads/ft/-Solution.githome-page-redesign.
+PS C:\Users\user\Documents\git_exercises> git add home.html                                   heckout ft/home-page-red
+PS C:\Users\user\Documents\git_exercises> git commit -m "new changes"
+[ft/home-page-redesign bfa401f] new changes    ebase main
+ 1 file changed, 1 insertion(+)                home-page-redesign.     
+PS C:\Users\user\Documents\git_exercises> git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads        
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 333 bytes | 333.00 KiB/s, done.
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by 
+visiting:
+remote:      https://github.com/Gihozo23/Gym-Git-Exercise-Solution/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Gihozo23/Gym-Git-Exercise-Solution.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
