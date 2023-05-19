@@ -152,7 +152,6 @@ Mode                 LastWriteTime         Length Name
 -a----         5/17/2023  11:57 PM            330 home.html
 -a----         5/17/2023  10:59 PM            877 index.html
 -a----         5/17/2023  10:57 PM             43 readme.md
--a----         5/18/2023  12:01 AM            274 team.html
 
 # git exercises
 # Bundle 3
