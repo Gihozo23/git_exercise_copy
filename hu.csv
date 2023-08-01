@@ -1,0 +1,6 @@
+Objects,Attributes,Behaviors (Methods),Encapsulation,Inheritance,Polymorphism,Modularity and Reusability,Interaction between Objects,Implement Privacy Controls,Data Handling and Encryption
+Chatbot,"nlpEngine, userInputs, response","processUserQuery(), generateResponse()",Yes,Yes,Yes,Yes,Yes,Yes,Yes
+User,"name, email, phone, address, medicalHistory","provideConsent(), updatePrivacySettings()",Yes,Yes,Yes,Yes,Yes,Yes,Yes
+DataCollector,"userData, consentStatus","collectUserData(), storeData()",Yes,Yes,Yes,Yes,Yes,Yes,Yes
+PrivacySettings,"consentOptions, privacyPolicy","setConsentOptions(), getPrivacyPolicy()",Yes,Yes,Yes,Yes,Yes,Yes,Yes
+DataStorage,"encryptedDataRepository","encryptData(), storeEncryptedData()",Yes,Yes,Yes,Yes,Yes,Yes,Yes
