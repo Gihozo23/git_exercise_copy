@@ -1,6 +1,6 @@
-Components/Entities,Relationships,Attributes and Methods,Encapsulation and Inheritance,Polymorphism and Modularity,Privacy Controls and Data Handling
-Chatbot,Interacts with User through processUserQuery() and generateResponse() methods,Attributes: nlpEngine, userInputs, response,Yes,Yes,Yes
-User,Interacts with Chatbot,Attributes: name, email, phone, address, medicalHistory; Methods: provideConsent(), updatePrivacySettings(),Yes,Yes,Yes
-DataCollector,Collects user data during interactions with the Chatbot and stores it using collectUserData() and storeData() methods,Attributes: userData, consentStatus,Yes,Yes,Yes
-PrivacySettings,Handles user consent and privacy preferences,Attributes: consentOptions, privacyPolicy; Methods: setConsentOptions(), getPrivacyPolicy(),Yes,Yes,Yes
-DataStorage,Stores user data securely in encryptedDataRepository,Attributes: encryptedDataRepository; Methods: encryptData(), storeEncryptedData(),Yes,Yes,Yes
+Components/Entities,Relationships,Attributes,Methods,Encapsulation,Inheritance,Polymorphism,Modularity,Privacy Controls and Data Handling
+Chatbot,Interacts with User,`nlpEngine`,processUserQuery(),Yes,Yes,Yes,Yes,Yes
+User,Interacts with Chatbot,`name`, `email`, `phone`, `address`, `medicalHistory`,provideConsent(), updatePrivacySettings(),Yes,Yes,Yes,Yes,Yes
+DataCollector,Interacts with Chatbot,`userData`, `consentStatus`,collectUserData(), storeData(),Yes,Yes,Yes,Yes
+PrivacySettings,Interacts with User,`consentOptions`, `privacyPolicy`,setConsentOptions(), getPrivacyPolicy(),Yes,Yes,Yes,Yes
+DataStorage,Interacts with DataCollector,`encryptedDataRepository`,encryptData(), storeEncryptedData(),Yes,Yes,Yes,Yes
